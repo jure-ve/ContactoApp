@@ -10,10 +10,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?android:attr/listPreferredItemHeight"
-
         android:padding="6dip"
         android:id="@+id/relativeLayout">
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,7 +27,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?android:attr/listPreferredItemHeight"
-
         android:padding="6dip"
         android:layout_below="@+id/relativeLayout"
         android:layout_alignParentLeft="true"
@@ -37,31 +34,24 @@
         android:id="@+id/relativeLayout2">
 
         <TextView
-            android:id="@+id/tituloNombre"
-
+            android:id="@+id/titulo_nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_alignParentBottom="false"
             android:layout_alignParentRight="false"
-
             android:text="@string/text_nombre"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:padding="10dp" />
 
-
         <TextView
-            android:id="@+id/datosNombre"
+            android:id="@+id/datos_nombre"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-
-            android:layout_toRightOf="@+id/tituloNombre"
+            android:layout_toRightOf="@+id/titulo_nombre"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-
             android:layout_alignWithParentIfMissing="true"
-
             android:gravity="center_vertical"
             android:text="@string/sin_datos"
             android:padding="10dp" />
@@ -71,7 +61,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?android:attr/listPreferredItemHeight"
-
         android:padding="6dip"
         android:id="@+id/relativeLayout3"
         android:layout_below="@+id/relativeLayout2"
@@ -79,31 +68,24 @@
         android:layout_alignParentStart="true">
 
         <TextView
-            android:id="@+id/tituloFecha"
-
+            android:id="@+id/titulo_fecha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_alignParentBottom="false"
             android:layout_alignParentRight="false"
-
             android:text="@string/text_fecha"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:padding="10dp" />
 
-
         <TextView
-            android:id="@+id/datosFecha"
+            android:id="@+id/datos_fecha"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-
-            android:layout_toRightOf="@+id/tituloFecha"
+            android:layout_toRightOf="@+id/titulo_fecha"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-
             android:layout_alignWithParentIfMissing="true"
-
             android:gravity="center_vertical"
             android:text="@string/sin_datos"
             android:padding="10dp" />
@@ -113,7 +95,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?android:attr/listPreferredItemHeight"
-
         android:padding="6dip"
         android:id="@+id/relativeLayout4"
         android:layout_below="@+id/relativeLayout3"
@@ -121,14 +102,11 @@
         android:layout_alignParentStart="true">
 
         <TextView
-            android:id="@+id/tituloTelefono"
-
+            android:id="@+id/titu_toTelefono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_alignParentBottom="false"
             android:layout_alignParentRight="false"
-
             android:text="@string/text_telefono"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -136,14 +114,11 @@
 
 
         <TextView
-            android:id="@+id/datosTelefono"
+            android:id="@+id/datos_telefono"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-
-            android:layout_toRightOf="@+id/tituloTelefono"
-
+            android:layout_toRightOf="@+id/titulo_telefono"
             android:layout_alignWithParentIfMissing="true"
-
             android:gravity="center_vertical"
             android:text="@string/sin_datos"
             android:padding="10dp" />
@@ -153,7 +128,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?android:attr/listPreferredItemHeight"
-
         android:padding="6dip"
         android:id="@+id/relativeLayout5"
         android:layout_below="@+id/relativeLayout4"
@@ -161,14 +135,11 @@
         android:layout_alignParentStart="true">
 
         <TextView
-            android:id="@+id/tituloCorreo"
-
+            android:id="@+id/titulo_correo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_alignParentBottom="false"
             android:layout_alignParentRight="false"
-
             android:text="@string/text_correo"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -176,16 +147,13 @@
 
 
         <TextView
-            android:id="@+id/datosCorreo"
+            android:id="@+id/datos_correo"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-
-            android:layout_toRightOf="@+id/tituloCorreo"
+            android:layout_toRightOf="@+id/titulo_correo"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-
             android:layout_alignWithParentIfMissing="true"
-
             android:gravity="center_vertical"
             android:text="@string/sin_datos"
             android:padding="10dp" />
@@ -195,7 +163,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?android:attr/listPreferredItemHeight"
-
         android:padding="6dip"
         android:id="@+id/relativeLayout6"
         android:layout_below="@+id/relativeLayout5"
@@ -203,14 +170,11 @@
         android:layout_alignParentStart="true">
 
         <TextView
-            android:id="@+id/tituloDescriptcion"
-
+            android:id="@+id/titulo_descriptcion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_alignParentBottom="false"
             android:layout_alignParentRight="false"
-
             android:text="@string/text_descripcion"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -218,15 +182,13 @@
 
 
         <TextView
-            android:id="@+id/datosDescriptcion"
+            android:id="@+id/datos_descriptcion"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-
-            android:layout_toRightOf="@+id/tituloDescriptcion"
+            android:layout_toRightOf="@+id/titulo_descriptcion"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_alignWithParentIfMissing="true"
-
             android:gravity="center_vertical"
             android:text="@string/sin_datos"
             android:padding="10dp" />
@@ -236,13 +198,11 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?android:attr/listPreferredItemHeight"
-
         android:padding="6dip"
         android:id="@+id/relativeLayout7"
         android:layout_below="@+id/relativeLayout6"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
-
 
         <Button
             android:layout_width="match_parent"

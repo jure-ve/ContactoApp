@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 public class ConfirmacionActivity extends AppCompatActivity {
 
-    Button boton_confirmar;
+    private Button boton_confirmar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,18 +19,23 @@ public class ConfirmacionActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
+            //
+            // Extrae los datos
+            //
             String nombre = extras.getString("nombre","Sin Datos");
             String fecha = extras.getString("fecha","Sin Datos");
             String telefono = extras.getString("telefono","Sin Datos");
             String correo = extras.getString("correo","Sin Datos");
             String descripcion = extras.getString("descripcion","Sin Datos");
 
-            TextView datosNombre      = (TextView) findViewById(R.id.datosNombre);
-            TextView datosFecha       = (TextView) findViewById(R.id.datosFecha);
-            TextView datosTelefono    = (TextView) findViewById(R.id.datosTelefono);
-            TextView datosCorreo      = (TextView) findViewById(R.id.datosCorreo);
-            TextView datosDescripcion = (TextView) findViewById(R.id.datosDescriptcion);
-
+            TextView datosNombre      = (TextView) findViewById(R.id.datos_nombre);
+            TextView datosFecha       = (TextView) findViewById(R.id.datos_fecha);
+            TextView datosTelefono    = (TextView) findViewById(R.id.datos_telefono);
+            TextView datosCorreo      = (TextView) findViewById(R.id.datos_correo);
+            TextView datosDescripcion = (TextView) findViewById(R.id.datos_descriptcion);
+            //
+            // Asigna los textos a los TextView
+            //
             datosNombre.setText(nombre);
             datosFecha.setText(fecha);
             datosTelefono.setText(telefono);

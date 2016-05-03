@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity  {
 
         dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
 
-        input_fecha = (EditText) findViewById(R.id.input_fecha);
-
         Calendar newCalendar = Calendar.getInstance();
-
+        //
+        // Inicializa el dialogo  DatePicker
+        //
         inputDatePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
 
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
@@ -47,33 +47,41 @@ public class MainActivity extends AppCompatActivity  {
 
         inputDatePickerDialog.setTitle(getResources().getString(R.string.hint_fecha));
 
+        input_fecha = (EditText) findViewById(R.id.input_fecha);
+
         input_fecha.setInputType(InputType.TYPE_NULL);
+
         input_fecha.setOnTouchListener(new View.OnTouchListener() {
 
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 v.onTouchEvent(event);
+                //
+                // Cierra el softkeyboart si está abierto
+                //
                 InputMethodManager imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
                 if (imm != null) {
                     imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
                 }
+                //
+                // Abre el Dialogo con el DatePicker
+                //
+                inputDatePickerDialog.show();
                 return true;
             }
         });
 
-        input_fecha.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                inputDatePickerDialog.show();
-            }
-        });
-
         button_siguiente = (Button)findViewById(R.id.button_siguiente);
-
+        //
+        // Define el OnClick en el Boton
+        //
         button_siguiente.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
+                //
+                // Define en intent
+                //
                 Intent intent = new Intent(MainActivity.this, ConfirmacionActivity.class);
 
                 EditText input_nombre      =  (EditText)findViewById(R.id.input_nombre);
@@ -81,13 +89,17 @@ public class MainActivity extends AppCompatActivity  {
                 EditText input_telefono    =  (EditText)findViewById(R.id.input_telefono);
                 EditText input_correo      =  (EditText)findViewById(R.id.input_correo);
                 EditText input_descripcion =  (EditText)findViewById(R.id.input_descripcion);
-
+                //
+                // Extrae los textos de los EditText y coloca como extra en el intent
+                //
                 intent.putExtra("nombre", input_nombre.getText().toString());
                 intent.putExtra("fecha", input_fecha.getText().toString());
                 intent.putExtra("telefono", input_telefono.getText().toString());
                 intent.putExtra("correo", input_correo.getText().toString());
                 intent.putExtra("descripcion", input_descripcion.getText().toString());
-
+                //
+                // Inicia la siguiente actividad
+                //
                 startActivity(intent);
             }
 
