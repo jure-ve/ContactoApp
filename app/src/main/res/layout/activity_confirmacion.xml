@@ -162,7 +162,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_height="wrap_content"
         android:padding="6dip"
         android:id="@+id/relativeLayout6"
         android:layout_below="@+id/relativeLayout5"
