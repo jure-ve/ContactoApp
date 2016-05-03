@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Contacto App</string>
+    <string name="hint_nombre">Nombre completo</string>
+    <string name="hint_fecha">Fecha de nacimiento</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="hint_correo">Correo</string>
+    <string name="hint_descripcion">Descripción del contacto</string>
+</resources>
