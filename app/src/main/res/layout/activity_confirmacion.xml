@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jure.contactoapp.ConfirmacionActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+
+        android:padding="6dip"
+        android:id="@+id/relativeLayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/confirmar"
+            android:id="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+
+        android:padding="6dip"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/tituloNombre"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+
+            android:text="@string/text_nombre"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/datosNombre"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/tituloNombre"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignWithParentIfMissing="true"
+
+            android:gravity="center_vertical"
+            android:text="@string/sin_datos"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+
+        android:padding="6dip"
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tituloFecha"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+
+            android:text="@string/text_fecha"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/datosFecha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/tituloFecha"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignWithParentIfMissing="true"
+
+            android:gravity="center_vertical"
+            android:text="@string/sin_datos"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+
+        android:padding="6dip"
+        android:id="@+id/relativeLayout4"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tituloTelefono"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+
+            android:text="@string/text_telefono"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/datosTelefono"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/tituloTelefono"
+
+            android:layout_alignWithParentIfMissing="true"
+
+            android:gravity="center_vertical"
+            android:text="@string/sin_datos"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+
+        android:padding="6dip"
+        android:id="@+id/relativeLayout5"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tituloCorreo"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+
+            android:text="@string/text_correo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/datosCorreo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/tituloCorreo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignWithParentIfMissing="true"
+
+            android:gravity="center_vertical"
+            android:text="@string/sin_datos"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+
+        android:padding="6dip"
+        android:id="@+id/relativeLayout6"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tituloDescriptcion"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+
+            android:text="@string/text_descripcion"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/datosDescriptcion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/tituloDescriptcion"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+
+            android:gravity="center_vertical"
+            android:text="@string/sin_datos"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+
+        android:padding="6dip"
+        android:id="@+id/relativeLayout7"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editar"
+            android:id="@+id/boton_confirmar"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

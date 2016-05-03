@@ -95,7 +95,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Siguiente"
+            android:text="@string/boton_siguiente"
             android:id="@+id/button_siguiente"
             android:layout_gravity="center_horizontal" />
 

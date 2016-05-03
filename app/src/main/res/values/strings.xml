@@ -5,4 +5,13 @@
     <string name="hint_telefono">Teléfono</string>
     <string name="hint_correo">Correo</string>
     <string name="hint_descripcion">Descripción del contacto</string>
+    <string name="boton_siguiente">Siguiente</string>
+    <string name="text_nombre">Nombre:</string>
+    <string name="text_fecha">Fecha de nacimiento:</string>
+    <string name="text_telefono">Teléfono:</string>
+    <string name="text_correo">Correo:</string>
+    <string name="text_descripcion">Descripción:</string>
+    <string name="sin_datos">Sin Datos</string>
+    <string name="confirmar">Confirmar Datos</string>
+    <string name="editar">Editar Datos</string>
 </resources>
