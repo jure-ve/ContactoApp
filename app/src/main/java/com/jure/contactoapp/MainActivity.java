@@ -50,24 +50,25 @@ public class MainActivity extends AppCompatActivity  {
         input_fecha = (EditText) findViewById(R.id.input_fecha);
 
         input_fecha.setInputType(InputType.TYPE_NULL);
-
-        input_fecha.setOnTouchListener(new View.OnTouchListener() {
-
+        //
+        //  Redefinimos el evento Onfocus de input_fecha
+        //
+        input_fecha.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                v.onTouchEvent(event);
+            public void onFocusChange(View v, boolean hasFocus) {
                 //
                 // Cierra el softkeyboart si está abierto
                 //
-                InputMethodManager imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
-                if (imm != null) {
-                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                if(hasFocus) {
+                    InputMethodManager imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    if (imm != null) {
+                        imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                    }
+                    //
+                    // Abre el Dialogo con el DatePicker
+                    //
+                    inputDatePickerDialog.show();
                 }
-                //
-                // Abre el Dialogo con el DatePicker
-                //
-                inputDatePickerDialog.show();
-                return true;
             }
         });
 
@@ -84,11 +85,11 @@ public class MainActivity extends AppCompatActivity  {
                 //
                 Intent intent = new Intent(MainActivity.this, ConfirmacionActivity.class);
 
-                EditText input_nombre      =  (EditText)findViewById(R.id.input_nombre);
-                EditText input_fecha       =  (EditText)findViewById(R.id.input_fecha);
-                EditText input_telefono    =  (EditText)findViewById(R.id.input_telefono);
-                EditText input_correo      =  (EditText)findViewById(R.id.input_correo);
-                EditText input_descripcion =  (EditText)findViewById(R.id.input_descripcion);
+                EditText input_nombre = (EditText) findViewById(R.id.input_nombre);
+                EditText input_fecha = (EditText) findViewById(R.id.input_fecha);
+                EditText input_telefono = (EditText) findViewById(R.id.input_telefono);
+                EditText input_correo = (EditText) findViewById(R.id.input_correo);
+                EditText input_descripcion = (EditText) findViewById(R.id.input_descripcion);
                 //
                 // Extrae los textos de los EditText y coloca como extra en el intent
                 //
